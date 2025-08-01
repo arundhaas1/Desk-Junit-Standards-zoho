@@ -1,4 +1,3 @@
-
 # 🧪 Java Unit Test Review Standards
 
 Follow these essential standards for writing clean, reliable, and maintainable unit tests in Java.
@@ -95,6 +94,8 @@ doReturn("active").when(service).getStatus();
 ```
 
 Only use `doReturn()` in rare edge cases like spying or final methods.
+
+✅ But use `doNothing().when(...)` or `doThrow(...)` for negative cases.
 
 ---
 
